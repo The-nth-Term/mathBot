@@ -18,7 +18,8 @@ bot = commands.Bot(command_prefix='_', description=description)
 # Runs whenever the bot launches
 @bot.event
 async def on_ready():
-    print(f'Logged in as {bot.user.name} {str(bot.user)}')
+    print()
+    print(f'Logged in as {str(bot.user)}')
     print('------')
 
 # A command for adding two numbers or concatenating two strings
